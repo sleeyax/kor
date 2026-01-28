@@ -28,7 +28,13 @@ spec:
                 {{- toYaml .Values.cronJob.args | nindent 16 }}
               {{- if ne .Values.cronJob.namespaced nil }}
                 - --namespaced={{ .Values.cronJob.namespaced }}
-              {{- end}}
+              {{- end }}
+              {{- if .Values.cronJob.includeNamespaces }}
+                - --include-namespaces={{ .Values.cronJob.includeNamespaces }}
+              {{- end }}
+              {{- if .Values.cronJob.excludeNamespaces }}
+                - --exclude-namespaces={{ .Values.cronJob.excludeNamespaces }}
+              {{- end }}
               {{- if .Values.cronJob.slackWebhookUrl }}
               env:
                 - name: SLACK_WEBHOOK_URL

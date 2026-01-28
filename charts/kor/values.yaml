@@ -19,6 +19,10 @@ cronJob:
     - all
   # -- Set true/false to explicitly return namespaced/non-namespaced resources
   namespaced: null
+  # -- Namespaces to run on, split by commas. Example: ns1,ns2,ns3. If set, non-namespaced resources will be ignored
+  includeNamespaces: ""
+  # -- Namespaces to be excluded, split by commas. Example: ns1,ns2,ns3. If includeNamespaces is set, excludeNamespaces will be ignored
+  excludeNamespaces: ""
   slackWebhookUrl: ""
   slackChannel: ""
   slackAuthToken: ""
