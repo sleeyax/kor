@@ -2,17 +2,17 @@ apiVersion: v2
 name: kor
 description: A Kubernetes Helm Chart to discover orphaned resources using kor
 type: application
-version: 0.2.13
-appVersion: "0.6.7"
+version: 0.2.14
+appVersion: "0.6.8"
 maintainers:
-  - name: "yonahd"
-    url: "https://github.com/yonahd/kor"
+  - name: "sleeyax"
+    url: "https://github.com/sleeyax/kor"
 annotations:
   "artifacthub.io/license": MIT
   "artifacthub.io/links": |
     - name: Application Source
-      url: https://github.com/yonahd/kor
+      url: https://github.com/sleeyax/kor
     - name: Chart Source
-      url: https://github.com/yonahd/kor/tree/main/charts/kor
+      url: https://github.com/sleeyax/kor/tree/feat/role-customizations/charts/kor
     - name: Grafana Dashboard
       url: https://grafana.com/grafana/dashboards/19863-kor-dashboard/
