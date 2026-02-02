@@ -10,8 +10,8 @@ cronJob:
   #     cpu: "10m"
   schedule: "0 1 * * 1"
   image:
-    repository: yonahdissen/kor
-    tag: latest
+    repository: ghcr.io/sleeyax/kor
+    tag: "0.6.8"
   # e.g. kor configmap --include-namespaces default,other-ns
   command:
     - kor
@@ -39,8 +39,8 @@ prometheusExporter:
   namespaced: null
   deployment:
     image:
-      repository: yonahdissen/kor
-      tag: latest
+      repository: ghcr.io/sleeyax/kor
+      tag: "0.6.8"
     restartPolicy: Always
     imagePullPolicy: Always
     imagePullSecrets: []
